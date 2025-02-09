@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GESSO DRYWALL, MÓVEIS PROJETADOS, 
+    PAREDES 3D, E MUITO MAIS">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="keyframe.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <script src="script.js"></script>
+    <title>Georgesso Decor</title>
+</head>
+
+<body>
+    <header>
+        <!--navegação-->
+        <div id="cabecalho-container">
+            <nav class="navbar">
+                <a id="logo" href="index.html"><img src="/Imagens/logo.png"></a>
+                <ul class="menu">
+                    <li class="atual"><a href="index.html">Home</a></li>
+                    <li><a href="QuemSomos.html">Quem somos</a></li>
+                    <li><a href="Portfolio.html">Portfólio</a></li>
+                    <li><a href="Servicos.html">Serviços</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                    <div class="close-btn" onclick="closeMenu()"><i class="ri-close-large-line"></i></div> <!-- Ícone de fechar (X) -->
+                </ul>
+                <div class="Nav_toggle" onclick="toggleMenu()"><i class="ri-menu-line"></i></div>
+            </nav>
+        </div>
+    </header>
+
+    <main> <!--Corpo do projeto-->
+        <!--Primeira Parte-->
+        <section>
+
+            <div class="pagina-principal-container">
+                
+                <header>
+                    <!--Área do título-->
+                    <div class="titulo-pagina-principal">
+                        <span class="detalhe-titulo">Realizando Sonhos</span>
+                        <h1>Conheça mais e venha tirar seus sonhos do papel</h1>
+                        <hr>
+                        <h2>Gesso drywall, móveis projetados, paredes 3d, e muito mais</h2>
+                        <img src="/Imagens/botton-down.png" onclick="rolarParaBaixo()" class="botao-descer">
+                    </div>
+                </header>
+
+                <div class="painel-principal-container">
+                    <!--Galeria de imagens inicial-->
+                    <div class="coluna1-painel">
+                    <figure><img src="/Imagens/imagem1.png"></figure>
+                    <figure><img src="/Imagens/imagem2.png"></figure>
+                    <figure><img src="/Imagens/imagem3.png"></figure>
+                    </div>
+
+                    <div class="coluna2-painel">
+                    <figure><img src="/Imagens/imagem4.png"></figure>
+                    <figure><img src="/Imagens/imagem5.png"></figure>
+                    <figure><img src="/Imagens/imagem6.png"></figure>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    
+
+        <!--Segunda Parte-->
+        <section>
+            <div class="pagina-mostruario-container">
+                <header>
+                    <!--Área do título da apresentação de serviços-->
+                    <div class="titulo-pagina-mostruario">
+                        <h2>CONHEÇA ALGUNS DE NOSSOS SERVIÇOS</h2>
+                        <hr>
+                        <h3>Há mais de 20 anos no mercado realizando projetos e garantindo satisfação.
+                            Veja alguns de nossos projetos já concluídos:</h3>
+                    </div>
+                </header>
+                <div class="acordeao-serviços-container">
+                    <!--Acordeao de imagens-->
+                    <div class="tab"><img src="/Imagens/imagem1.png"></div>
+                    <div class="tab"><img src="/Imagens/imagem2.png"></div>
+                    <div class="tab"><img src="/Imagens/imagem3.png"></div>
+                    <div class="tab"><img src="/Imagens/imagem4.png"></div>
+                    <div class="tab"><img src="/Imagens/imagem5.png"></div>
+                    <div class="tab"><img src="/Imagens/imagem6.png"></div>
+
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!--Terceira Parte-->
+        <section>
+            <div class="pagina-servicos-container">
+                <header>
+                    <!--Área do título de serviços mais solicitados-->
+                    <div class="titulo-pagina-servicos">
+                        <h2>Serviços mais solicitados</h2>
+                    </div>
+                </header>
+                <div class="card-container">
+                    <!--Cards de serviços-->
+                    <div class="card-total">
+                        <h2>Forros</h2>
+                        <div class="card">
+                            <div class="card-details">
+                            <img src="Imagens/card1.png">
+                            </div>
+                            <button class="card-button">Mais informações</button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="card-total">
+                        <h2>Sancas</h2>
+                        <div class="card">
+                            <div class="card-details">
+                            <img src="Imagens/card2.png">
+                            </div>
+                            <button class="card-button">Mais informações</button>
+                        </div>
+                    </div>
+
+                    <div class="card-total">
+                        <h2>Paredes 3D</h2>
+                        <div class="card">
+                            <div class="card-details">
+                            <img src="Imagens/card3.png">
+                            </div>
+                            <button class="card-button">Mais informações</button>
+                        </div>
+                    </div>
+
+                    <div class="card-total">
+                        <h2>Móveis Projetados</h2>
+                        <div class="card">
+                            <div class="card-details">
+                            <img src="Imagens/card4.png">
+                            </div>
+                            <button class="card-button">Mais informações</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--Quarta Parte-->
+        <section>
+                <!--Área do título de depoimentos-->
+                <div class="pagina-depoimentos-container">
+                    <div class="titulo-container">
+                        <span class="detalhe-titulo">Depoimentos</span>
+                        <h2>Veja o que nossos clientes dizem</h2>
+                    </div>
+
+                    <div class="depoimentos-container">
+
+                        <div class="depoimento-total">
+                            <div class="depoimento">
+                                Aenean volutpat massa vitae nisl egestas tempor. Ut accumsan iaculis pellentesque. Aenean eu lectus a justo tristique hendrerit et non nibh. Nulla facilisi. Sed libero purus, rhoncus vel lorem non, porta sollicitudin magna. Aenean sit amet posuere purus, in bibendum tortor. In volutpat ultricies ex, ac laoreet dui mollis nec. Suspendisse ullamcorper nibh eget posuere faucibus. Fusce enim dui, consectetur at lorem sed, blandit bibendum libero. Etiam quis fringilla elit. Etiam consequat mi sit amet nibh hendrerit tristique. Vestibulum vel eros nec lectus varius luctus. Duis sagittis non sem at consequat. Praesent eu lorem euismod, lobortis risus et, accumsan dui. Donec eget efficitur libero. Nullam imperdiet nulla et metus facilisis, quis imperdiet velit rhoncus.
+
+Vestibulum finibus elit eget eros vulputate ullamcorper. Donec dapibus lacinia felis. Quisque et pellentesque felis. Sed tempor posuere lorem vel tempor. Morbi mollis facilisis magna, at volutpat elit rhoncus vitae. Curabitur sollicitudin augue at facilisis finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In auctor vel mauris eu imperdiet. Vestibulum sit amet eros at magna porta suscipit. Quisque eget sagittis purus. Sed sit amet convallis turpis, sit amet sagittis odio. Cras porttitor ipsum vitae libero finibus, quis blandit lacus efficitur.
+                                <div class="imagem-depoimento">
+                                    <img src="">
+                                </div> 
+                            </div>
+                            <h3>Serviço realizado</h3>
+                        </div>
+
+                        <div class="depoimento-total">
+                            <div class="depoimento">
+                                Aenean volutpat massa vitae nisl egestas tempor. Ut accumsan iaculis pellentesque. Aenean eu lectus a justo tristique hendrerit et non nibh. Nulla facilisi. Sed libero purus, rhoncus vel lorem non, porta sollicitudin magna. Aenean sit amet posuere purus, in bibendum tortor. In volutpat ultricies ex, ac laoreet dui mollis nec. Suspendisse ullamcorper nibh eget posuere faucibus. Fusce enim dui, consectetur at lorem sed, blandit bibendum libero. Etiam quis fringilla elit. Etiam consequat mi sit amet nibh hendrerit tristique. Vestibulum vel eros nec lectus varius luctus. Duis sagittis non sem at consequat. Praesent eu lorem euismod, lobortis risus et, accumsan dui. Donec eget efficitur libero. Nullam imperdiet nulla et metus facilisis, quis imperdiet velit rhoncus.
+                                <div class="imagem-depoimento">
+                                    <img src="">
+                                </div> 
+                            </div>
+                            <h3>Serviço realizado</h3>
+                        </div>
+
+                        <div class="depoimento-total">
+                            <div class="depoimento">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget lacinia dui. Vestibulum lobortis risus nec quam volutpat facilisis. Praesent sit amet orci dictum, bibendum justo eu, rhoncus sem. Donec quis blandit tellus, vel iaculis ligula. Mauris suscipit sed tellus ut feugiat. Curabitur molestie facilisis posuere. Fusce eros justo, finibus eu aliquam non, vestibulum scelerisque dui. Praesent rutrum tellus id aliquet posuere. Proin faucibus ante ac pulvinar malesuada. Aenean in mollis nisl. Donec id mattis quam, et efficitur tellus.
+                                <div class="imagem-depoimento">
+                                    <img src="">
+                                </div> 
+                            </div>
+                            <h3>Serviço realizado</h3>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--Rodapé-->
+        <div class="footer-container">
+                <!--Contatos-->
+            <div class="contatos1-container">
+                <div class="contato-icon">
+                    <img src="Imagens/icon-whatsapp.png">
+                </div>
+
+                <div class="contato-icon">
+                    <img src="Imagens/icon-instagram.png">
+                </div>
+
+                <div class="contato-icon">
+                    <img src="Imagens/icon-google.png">
+                </div>
+            </div>
+
+
+            <div class="contatos2-container">
+                <div class="telefone">
+                    <img src="Imagens/icon-telefone.png">
+                    <span class="numero">(85) 98859-8062</span>
+                </div>
+                <div class="email">
+                    <img src="Imagens/icon-email.png">
+                    <span class="contato-email">Georgemelo2904@gmail.com</span>
+                </div>
+            </div>
+
+
+            <div class="nav-footer">
+                <!--Navegação-->
+                <nav class="navbar-footer">
+                    <ul class="menu-footer">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Quem somos</a></li>
+                        <li><a href="">Portfólio</a></li>
+                        <li><a href="">Serviços</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <!--Copyright-->
+                <div class="copyright-container">
+                    <div class="copyright"> &copy; 2024 Georgesso Decor</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

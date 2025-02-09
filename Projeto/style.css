@@ -57,50 +57,63 @@ ul{
 
     .navbar .menu {
       display: none;
-      width: 100%;
       flex-direction: column;
       background-color: #333;
-      position: absolute;
-      left: 0;
-      transform: translateX(-100%);
-      transition: left 0.4s ease; 
+    }
+
+    .menu{
+        max-height: 0; /* Começa com o menu "colapsado" */
+        overflow: hidden; /* Esconde o conteúdo extra */
+        opacity: 0; /* Começa invisível */
+        transition: max-height 0.5s ease, opacity 0.5s ease; /* Transição suave */
+    }
+
+    .menu.active{
+        max-height: 100vh; /* Expande o menu para o tamanho total da tela */
+        opacity: 1; /* Torna o menu visível */
     }
 
     .navbar .menu.active {
         display: flex;
         justify-content: center;
         gap: 6%;
-        height: 100%;
-        width: 100%;
         top: 0;
-        transition: left 0.4s;
         background-color: #4b1b1b;
-        transform: translateX(0);
+
     }
 
     .navbar .menu li {
         text-align: center;
         margin: 10px 0;
         color: white;
-        
     }
 
+
     .navbar .menu.active li a {
-        color: #bbbbbb; /* Exemplo: cor laranja quando ativo */
+        display: block;
+        color: #bbbbbb;
+        transition: margin .4s;
+    }
+    .navbar .menu.active li a::after {
+        color: #bbbbbb;
+        transition: width .4s ease-out;
     }
 
     .navbar .menu.active li a:hover {
-        color: #d9d9d977; /* Exemplo: cor laranja quando ativo */
+        margin-left: 3.5rem;
+        color: #D9D9D9;
     }
-    .navbar .menu li.atual a {
-        color: #ffffff; /* Cor laranja para indicar que é a página ativa */
+
+    .menu:has(.navlink:hover) .navlink:not(:hover){
+        opacity: .4;
     }
+   
     .close-btn{
-        align-self: center;
+        align-self: center
     }
 
     .navbar .close-btn:hover {
-        color: #d9d9d977; /* Exemplo: cor laranja quando ativo */
+        color: #d9d9d977;
     }
 
 
@@ -118,7 +131,6 @@ ul{
 }
 
 .menu{
-    display: flex;
     gap: 2.1rem;
     text-transform: uppercase;
     font-size: 1.1rem;

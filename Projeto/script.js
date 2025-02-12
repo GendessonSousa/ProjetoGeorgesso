@@ -5,6 +5,7 @@ function rolarParaBaixo() {
     });
   }
 
+  /*
   function toggleMenu() {
     const navLinks = document.querySelector('.menu');
     const closeBtn = document.querySelector('.close-btn');
@@ -20,6 +21,41 @@ function rolarParaBaixo() {
   }
 
 
+const NavMenu = document.getElementById("nav-menu"),
+      navToggle = document.getElementById("nav-toggle"),
+      navClose = document.getElementById("nav-close")
+
+
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+      NavMenu.classList.add("show-menu")
+    })
+}
+
+
+if(navClose){
+    navClose.addEventListener('click', () =>{
+      NavMenu.classList.remove("show-menu")
+    })
+}*/
+
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/* Menu show */
+if(navToggle){
+   navToggle.addEventListener('click', () =>{
+      navMenu.classList.add('show-menu')
+   })
+}
+
+/* Menu hidden */
+if(navClose){
+   navClose.addEventListener('click', () =>{
+      navMenu.classList.remove('show-menu')
+   })
+}
 
 
 

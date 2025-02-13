@@ -41,19 +41,22 @@ if(navClose){
 
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+      navClose = document.getElementById('nav-close'),
+      body = document.body;
 
 /* Menu show */
 if(navToggle){
    navToggle.addEventListener('click', () =>{
-      navMenu.classList.add('show-menu')
+      navMenu.classList.add('show-menu');
+      body.classList.add('no-scroll');
    })
 }
 
 /* Menu hidden */
 if(navClose){
    navClose.addEventListener('click', () =>{
-      navMenu.classList.remove('show-menu')
+      navMenu.classList.remove('show-menu');
+      body.classList.remove('no-scroll');
    })
 }
 

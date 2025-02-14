@@ -42,13 +42,15 @@ if(navClose){
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close'),
-      body = document.body;
+      body = document.body,
+      deixarInvisivel = document.getElementById('hidden');
 
 /* Menu show */
 if(navToggle){
    navToggle.addEventListener('click', () =>{
       navMenu.classList.add('show-menu');
       body.classList.add('no-scroll');
+      deixarInvisivel.classList.add('invisivel');
    })
 }
 
@@ -57,6 +59,7 @@ if(navClose){
    navClose.addEventListener('click', () =>{
       navMenu.classList.remove('show-menu');
       body.classList.remove('no-scroll');
+      deixarInvisivel.classList.remove('invisivel');
    })
 }
 

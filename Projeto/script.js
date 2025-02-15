@@ -40,8 +40,10 @@ if(navClose){
 }*/
 
 const navMenu = document.getElementById('nav-menu'),
+      navMenuft = document.getElementById('navbar-footer'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close'),
+      navToggleFt = document.getElementById('nav-toggle-ft'),
       body = document.body,
       deixarInvisivel = document.getElementById('hidden');
 
@@ -63,5 +65,12 @@ if(navClose){
    })
 }
 
-
+/* Menu ft show */
+if(navToggleFt){
+  navToggleFt.addEventListener('click', () =>{
+     navMenuft.classList.add('show-menu-ft');
+     body.classList.add('no-scroll');
+     deixarInvisivel.classList.add('invisivel');
+  })
+}
 

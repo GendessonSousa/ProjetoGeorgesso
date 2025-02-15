@@ -44,6 +44,7 @@ const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close'),
       navToggleFt = document.getElementById('nav-toggle-ft'),
+      navCloseFt = document.getElementById('nav-close-ft'),
       body = document.body,
       deixarInvisivel = document.getElementById('hidden');
 
@@ -74,3 +75,10 @@ if(navToggleFt){
   })
 }
 
+if(navCloseFt){
+  navCloseFt.addEventListener('click', () =>{
+     navMenuft.classList.remove('show-menu-ft');
+     body.classList.remove('no-scroll');
+     deixarInvisivel.classList.remove('invisivel');
+  })
+}

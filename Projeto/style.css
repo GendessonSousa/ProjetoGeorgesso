@@ -791,7 +791,7 @@ ul{
     opacity: 1;
 }
 
-.nav__toggle-ft{
+.nav__toggle-ft, .nav__close-ft{
   display: none;
   color: white;
   font-size: 1.5rem;
@@ -800,7 +800,6 @@ ul{
   cursor: pointer;
   margin-right: 1rem;
 }
-
 
 @media(max-width: 630px){
   .navbar-footer{
@@ -823,7 +822,19 @@ ul{
     justify-content: space-between;
     transition: left .4s;
   }
+  .nav__close-ft{
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    right: .25rem;
+  }
+  .menu-footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
 }
+
 
 .show-menu-ft{
   left: 0;

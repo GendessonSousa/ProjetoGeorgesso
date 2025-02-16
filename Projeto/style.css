@@ -65,7 +65,7 @@ ul{
   color: #D9D9D9;
   transition: opacity .4s;
 }
-.nav__close:hover, .nav__toggle:hover{
+.nav__close:hover{
   opacity: .4;
 }
 .nav__logo img{

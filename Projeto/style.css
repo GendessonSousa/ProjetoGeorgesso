@@ -247,7 +247,7 @@ ul{
     }   
     section .pagina-principal-container {
       background-image:linear-gradient(180deg, rgba(255, 252, 252, 0.521), rgba(255, 255, 255, 0.89)), 
-      url('/Projeto/Imagens/ImagemFundoPrincipal.jpg');
+      url('Imagens/ImagemFundoPrincipal.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -382,6 +382,7 @@ ul{
   }
 
   .titulo-pagina-mostruario{
+    align-items: center;
     padding: 0rem 2rem;
   }
 }
@@ -482,6 +483,7 @@ ul{
   .pagina-servicos-container{
     height:auto;
     padding: 4rem 0rem;
+
   }
   
   .card-container{
@@ -728,6 +730,7 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
     padding: 2rem;
@@ -740,6 +743,7 @@ ul{
   }
 
   .contatos2-container img{
+
     height: 1.5rem;
     width: 1.5rem;
   }
@@ -759,6 +763,7 @@ ul{
  
   .nav-footer{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin-top: 1rem;
   }
@@ -801,7 +806,7 @@ ul{
   margin-right: 1rem;
 }
 
-@media(max-width: 630px){
+@media(max-width: 730px){
   .navbar-footer{
     display: none;
   }
@@ -872,11 +877,12 @@ ul{
     opacity: .4;
 }
 
-}
 .nav__list-ft {
   display: flex;
   flex-direction: column;
 }
+}
+
 
 .nav__link-ft {
     position: relative;

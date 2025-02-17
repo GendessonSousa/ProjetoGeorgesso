@@ -8,27 +8,54 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="keyframe.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <title>Georgesso Decor</title>
 </head>
 
 <body>
-    <header>
+    <header class="header" id="header">
         <!--navegação-->
-        <div id="cabecalho-container">
-            <nav class="navbar">
-                <a id="logo" href="index.html"><img src="/Imagens/logo.png"></a>
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="atual"><a href="QuemSomos.html">Quem somos</a></li>
-                    <li><a href="Portfolio.html">Portfólio</a></li>
-                    <li><a href="Servicos.html">Serviços</a></li>
-                    <li><a href="Contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        <nav class="nav container">
+                <a class="nav__logo" href="index.html"><img src="Imagens/logo_georgesso.png"></a>
 
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="QuemSomos.html" class="nav__link">Quem somos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="Portfolio.html" class="nav__link">Portfólio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="Servicos.html" class="nav__link">Serviços</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="Contato.html" class="nav__link">Contato</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close"><i class="ri-close-large-line"></i></div>
+
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+        </nav>
+    </header>
+        <div class="quem_somos_container">
+            <span class="sobre">Sobre</span>
+            <h1>
+                Veja mais sobre nossa história!!
+            </h1>
+            <span class="texto principal">
+                A Georgesso é uma empresa especializada na execução de serviços de gesso, com mais de 20 anos de experiência no setor. Com um compromisso firme com a qualidade, a empresa se destaca por oferecer soluções personalizadas, sempre atendendo às necessidades específicas de seus clientes. Ao longo dos anos, a Georgesso se consolidou como referência em gesso, realizando projetos que vão desde reformas simples até grandes obras.
+
+                Cada trabalho é executado com a dedicação e cuidado que fazem da Georgesso uma escolha confiável e preferida para quem busca excelência em acabamento e durabilidade. Seu fundador, um profissional com vasta experiência, tem como prioridade a satisfação do cliente, entregando projetos que combinam qualidade, design e eficiência.
+            </span>
+        </div>
+    <main> <!--Corpo do projeto--></main>
 
     <footer>
         <!--Rodapé-->
@@ -36,15 +63,15 @@
                 <!--Contatos-->
             <div class="contatos1-container">
                 <div class="contato-icon">
-                    <img src="Imagens/icon-whatsapp.png">
+                    <a href="https://wa.me/5585988598062?text=Olá!%20Gostaria%20de%20mais%20informações."  target="_blank"><i class="ri-whatsapp-fill"></i></a>
                 </div>
 
                 <div class="contato-icon">
-                    <img src="Imagens/icon-instagram.png">
+                    <a href="https://www.instagram.com/georgesso.decor/"  target="_blank"><i class="ri-instagram-fill"></i></a>
                 </div>
 
                 <div class="contato-icon">
-                    <img src="Imagens/icon-google.png">
+                    <a href="mailto:georgemelo2904@gmail.com"  target="_blank"><i class="ri-mail-fill"></i></a>
                 </div>
             </div>
 
@@ -52,26 +79,33 @@
             <div class="contatos2-container">
                 <div class="telefone">
                     <img src="Imagens/icon-telefone.png">
-                    <span class="numero">(85) 98859-8062</span>
+                    <a href="tel:+5585988598062"><span class="numero">(85) 98859-8062</span></a>
                 </div>
                 <div class="email">
                     <img src="Imagens/icon-email.png">
-                    <span class="contato-email">Georgemelo2904@gmail.com</span>
+                    <a href="mailto:georgemelo2904@gmail.com"><span class="contato-email">Georgemelo2904@gmail.com</span></a>
                 </div>
             </div>
 
 
             <div class="nav-footer">
                 <!--Navegação-->
-                <nav class="navbar-footer">
-                    <ul class="menu-footer">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Quem somos</a></li>
-                        <li><a href="">Portfólio</a></li>
-                        <li><a href="">Serviços</a></li>
-                        <li><a href="">Contato</a></li>
-                    </ul>
-                </nav>
+                <div class="navbar-footer" id="navbar-footer">
+                    <nav class="nav-ft">
+                        <div class="menu-footer">
+                            <ul class="nav__list-ft">
+                                <li class="nav__item-ft"><a href="" class="nav__link-ft">Home</a></li>
+                                <li class="nav__item-ft"><a href="" class="nav__link-ft">Quem somos</a></li>
+                                <li class="nav__item-ft"><a href="" class="nav__link-ft">Portfólio</a></li>
+                                <li class="nav__item-ft"><a href="" class="nav__link-ft">Serviços</a></li>
+                                <li class="nav__item-ft"><a href="" class="nav__link-ft">Contato</a></li>
+                            </ul>
+                        </div>
+                    
+                    </nav>
+                    <div class="nav__close-ft" id="nav-close-ft"><i class="ri-close-large-line"></i></div>
+                </div>
+                <div class="nav__toggle-ft" id="nav-toggle-ft"><i class="ri-menu-line"></i></div>
             </div>
 
             <div>
@@ -82,5 +116,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -32,6 +32,7 @@ ul{
     position: absolute;
     width: 100%;
     top: 0;
+    height: 5.7rem;
     left: 0;
     background-color: #D9D9D9;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -39,13 +40,17 @@ ul{
 
 .nav {
     position: relative;
-    height: 5.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
 }
 
+.nav__logo img{
+  width: 140px;
+  height: auto;
+  color: #353E25;
+}
 /*Aqui vai a configuração da logo, porém utilizarei uma foto, irei criar e retornar para colocar depois*/
 
 .nav__close, 
